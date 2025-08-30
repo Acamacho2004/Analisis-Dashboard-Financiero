@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinScope - Registro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Columna Izquierda - Registro -->
+        <div class="left-column">
+            <div class="login-content">
+                <div class="logo">
+                    <div class="logo-icon">📊</div>
+                    <div class="logo-text">
+                        <span class="core">Fin</span><span class="wall">Scope</span>
+                    </div>
+                </div>
+                
+                <h1 class="welcome">Crear Cuenta</h1>
+                
+                <form id="registerForm" class="login-form">
+                    <div class="input-group">
+                        <label for="firstName">Nombre:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="lastName">Apellido:</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="confirmPassword">Confirmar contraseña:</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    </div>
+                    
+                    <button type="submit" class="login-btn">Crear Cuenta</button>
+                </form>
+                
+                <div class="login-links">
+                    <p>¿Ya tienes una cuenta? <a href="index.html" class="link-text">Iniciar Sesión</a></p>
+                </div>
+                
+                <div id="errorMessage" class="error-message" style="display: none;"></div>
+                <div id="successMessage" class="success-message" style="display: none;"></div>
+            </div>
+        </div>
+        
+        <!-- Columna Derecha - Información -->
+        <div class="right-column">
+            <div class="info-container">
+                <div class="info-box">
+                    <div class="info-content">
+                        <div class="info-icon">
+                            <img src="images/chart-icon.png" alt="Análisis" class="feature-icon">
+                        </div>
+                        <div class="info-text">
+                            <h3>Análisis Financiero Inteligente</h3>
+                            <p>Accede a herramientas avanzadas de análisis financiero, reportes personalizados y dashboards interactivos para tomar decisiones informadas.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-box">
+                    <div class="info-content">
+                        <div class="info-icon">
+                            <img src="images/portfolio-icon.png" alt="Portafolios" class="feature-icon">
+                        </div>
+                        <div class="info-text">
+                            <h3>Gestión de Portafolios</h3>
+                            <p>Monitorea tus inversiones en tiempo real, analiza el rendimiento histórico y optimiza tu estrategia de inversión con datos precisos.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-box">
+                    <div class="info-content">
+                        <div class="info-icon">
+                            <img src="images/report-icon.png" alt="Reportes" class="feature-icon">
+                        </div>
+                        <div class="info-text">
+                            <h3>Reportes y Análisis</h3>
+                            <p>Genera reportes detallados, análisis de tendencias y proyecciones financieras basadas en datos del mercado y algoritmos avanzados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="register.js"></script>
+</body>
+</html>
